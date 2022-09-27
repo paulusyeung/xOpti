@@ -13,8 +13,8 @@ A point-of-sale system for optical retail shop.
   好處係之前嘅 Visual Basic 寫嘅 program 可以照用，慢慢升級。
 
 * PostgreSQL
-
-* 好處係唔會爆 2GB Size Limit，唔好嘅地方係要寫 data migration。
+  
+  好處係唔會爆 2GB Size Limit，唔好嘅地方係要寫 data migration。
 
 ## Tools/ Packages
 
@@ -28,11 +28,11 @@ A point-of-sale system for optical retail shop.
 
 ## API
 
-* ##### RESTful
+* #### RESTful
   
   傳統方式，可以十拿九穩。
 
-* ##### GraphQL
+* #### GraphQL
   
   代替 RESTful，玩下新嘢。
   
