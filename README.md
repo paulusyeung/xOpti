@@ -27,5 +27,15 @@ A point-of-sale system for optical retail shop.
 ## API
 
 * ###### RESTful
+  
+  傳統方式，可以十拿九穩。
 
 * ##### GraphQL
+  
+  代替 RESTful，玩下新嘢。
+  
+  　
+
+## [Sakia-Vue](https://github.com/primefaces/sakai-vue)
+
+免費嘅 Vue Admin Template，用嚟寫 Web App，全 client side，可以做埋 mobiles + tablets。不過仲未搞清楚點樣用佢嘅 [Locale](https://www.primefaces.org/primevue/locale) 嚟做 Internationalization，佢充就話包咗 [PrimeLocale](https://github.com/primefaces/primelocale)，仲話可以混合 [i18n](https://peaku.co/questions/2181-%C2%BFcomo-utilizar-la-integracion-de-primevue-i18n)，但係都唔明點用？
