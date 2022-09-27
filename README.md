@@ -1,10 +1,12 @@
 # xOpti
 
-### Intro
+A point-of-sale system for optical retail shop.
 
-當初係叫 SynergyV 嘅，從此叫 xOpti。
+## Intro
 
-原來嘅數據庫係用 Access MDB，依家有兩種選擇：
+當初係叫 SynergyV，用 Visual Basic 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App。
+
+原本嘅數據庫係用 Access MDB，依家有兩種選擇：
 
 * 照舊用 MDB
   好處係之前嘅 Visual Basic 寫嘅 program 可以照用，慢慢升級。
@@ -12,7 +14,7 @@
 * PostgreSQL
   好處係唔會爆 2GB Size Limit，唔好嘅地方係要寫 data migration。
 
-### Database
+## Tools/ Packages
 
 [EntityFrameworkCore.Jet](https://github.com/bubibubi/EntityFrameworkCore.Jet)
 
@@ -22,7 +24,7 @@
 
 用嚟將 AccDb (mdb) convert 做 PostgreSQL，我順手試埋佢哋隻 Access to MySQL，兩隻都 OK。要留意嘅係佢唔處理 ForeignKeys，對我嚟講係最好不過！
 
-### API
+## API
 
 * ###### RESTful
 
