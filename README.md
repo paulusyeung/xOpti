@@ -9,10 +9,12 @@ A point-of-sale system for optical retail shop.
 原本嘅數據庫係用 Access MDB，依家有兩種選擇：
 
 * 照舊用 MDB
+  
   好處係之前嘅 Visual Basic 寫嘅 program 可以照用，慢慢升級。
 
 * PostgreSQL
-  好處係唔會爆 2GB Size Limit，唔好嘅地方係要寫 data migration。
+
+* 好處係唔會爆 2GB Size Limit，唔好嘅地方係要寫 data migration。
 
 ## Tools/ Packages
 
@@ -26,7 +28,7 @@ A point-of-sale system for optical retail shop.
 
 ## API
 
-* ###### RESTful
+* ##### RESTful
   
   傳統方式，可以十拿九穩。
 
