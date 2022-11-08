@@ -4,7 +4,7 @@ A point-of-sale system for optical retail shop.
 
 ## Intro
 
-當初係叫 SynergyV，用 Visual Basic 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App。
+當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App。
 
 原本嘅數據庫係用 Access MDB，依家有兩種選擇：
 
@@ -28,15 +28,13 @@ A point-of-sale system for optical retail shop.
 
 [Hot Chocolate](https://chillicream.com/docs/hotchocolate)
 
-用嚟搞 GrapgQL API
-
-
+用嚟搞 GraphQL API
 
 ## API
 
 * #### RESTful
   
-  傳統方式，可以十拿九穩。
+  傳統方式，可以十拿九穩。參考：[Building REST APIs with .NET 5, ASP.NET Core, and PostgreSQL](https://www.endpointdev.com/blog/2021/07/dotnet-5-web-api/)
 
 * #### GraphQL
   
@@ -44,6 +42,19 @@ A point-of-sale system for optical retail shop.
 
 差開一筆，Github 有隻搞 WebApi 嘅 code generator：[CodeGenerator3](https://github.com/capesean/codegenerator3)，有文有路，有時間嘅話可以參考一下。
 
-## [Sakia-Vue](https://github.com/primefaces/sakai-vue)
+## [Sakai-Vue](https://github.com/primefaces/sakai-vue)
 
 免費嘅 Vue Admin Template，用嚟寫 Web App，全 client side，可以做埋 mobiles/ tablets。不過仲未搞清楚點樣用佢嘅 [Locale](https://www.primefaces.org/primevue/locale) 嚟做 Internationalization，佢就話包咗 [PrimeLocale](https://github.com/primefaces/primelocale)，仲話可以混合 [i18n](https://peaku.co/questions/2181-%C2%BFcomo-utilizar-la-integracion-de-primevue-i18n)，但係都唔明點用？唔通要 Pro 版先得？
+
+## [Vue-Pure-Admin](https://github.com/xiaoxian521/vue-pure-admin)
+
+```context
+是一个免费开源的中后台模版。使用了最新的 vue3 vite2 Element-Plus TypeScript 等
+主流技术开发，开箱即用的中后台前端解决方案，也可用于学习参考。
+```
+
+首先，佢係國內網友開發的，担心會結構混亂，不過睇咗佢嘅 Docs，好用心寫，Github Issues 又好認真回應，又持續更新，我投佢一票；其次，佢用 TypeScript，我唔喜歡 Microsoft 用嚟搞局嘅 TypeScript，不過，Vue3 都落重注喺 TypeScript，我既然想用 Vue3，唯有照跟。
+
+用咗佢嘅 [國際化精簡版](https://github.com/xiaoxian521/pure-admin-thin/tree/i18n)。
+
+簡化版要增加 menu items 可以參考這篇文章：[第八天 把喜歡的vue-pure-admin頁面 加到 pure-admin-thin {{實戰}} - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10296371)。
