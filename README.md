@@ -4,7 +4,18 @@ A point-of-sale system for optical retail shop.
 
 ## Intro
 
-當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App，希望可以用哂 .Net Core 將來全 Linux 唔使靠 IIS，全免 Windows server licenses。終極目標係用 Porxmox 搞幾隻 VMs 執行哂所有要用嘅 functions。
+當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App，希望可以用哂 .Net Core ，將來全 Linux 唔使靠 IIS，全免 Windows server licenses。終極目標係用 Porxmox 搞幾隻 VMs 執行哂所有要用嘅 functions：
+
+```textile
++--------+ +--------+ +--------+
+|  web   | |  sql   | |  file  |
+| server | | server | | server |
++--------+-+--------+-+--------+
+|    Proxmox Virtual Server    |
++------------------------------+
+```
+
+
 
 ## Database
 
@@ -71,7 +82,7 @@ A point-of-sale system for optical retail shop.
 
 ## API
 
-唔會搞全部 tables 嘅 CRUD，主要係提供足夠嘅 API 俾 client side 用就算達標：
+唔會搞全部 tables 嘅 CRUD，主要係提供足夠嘅 API 俾 Web App 或者 Mobile App 用就算達標：
 
 * #### RESTful
   
