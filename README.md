@@ -16,18 +16,23 @@ A point-of-sale system for optical retail shop.
 ```
 
 * Proxy Server
+  
   其實係用 [nginx](https://nginx.com/) 搞嘅 Reverse Proxy Server，當使用單一 domain name 嘅時候，可以將唔同嘅 sub-domain 指去唔同嘅 IP。
 
 * RDP Server
+  
   我用 [Gaucamole](https://guacamole.apache.org/) 直接由外聯網 access 啲內聯網嘅 workstations 或 servers。
 
 * Web Server
+  
   比較多，例如：xOpti.WebApp﹑xOpti.Api﹑xOpti.Restful﹑xOpti.Graphql﹑xOpti.Bot﹑xOpti.Reports﹑xOpti.Hangfire 等等 utilities/ applications。
 
 * SQL Server
+  
   我會用 [PostgreSQL](https://www.postgresql.org/) v15。
 
 * File Server
+  
   用 [NextCloud](https://nextcloud.com/) community edition，主要係放啲 image files。
 
 ## Database
