@@ -2,7 +2,7 @@
 
 A point-of-sale system for optical retail shop.
 
-## Intro
+## 1. Intro
 
 當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App，希望可以用哂 .Net Core ，將來全 Linux 唔使靠 IIS，全免 Windows server licenses。終極目標係用 [Porxmox](https://www.proxmox.com/en/) 搞幾隻 VMs 執行哂所有要用嘅 functions：
 
@@ -33,15 +33,15 @@ A point-of-sale system for optical retail shop.
 
 * File Server
   
-  用 [NextCloud](https://nextcloud.com/) community edition，主要係放啲 image files。
+  用 [NextCloud](https://nextcloud.com/) community edition，主要係放啲 image files，進一步就係利用佢同 [OnlyOffice](https://www.onlyoffice.com/) 嘅 integration，加上 frontend 有現成嘅  [Vue OnlyOffice Component](https://api.onlyoffice.com/editors/vue)，直接整合成 document management service，處理辦公室文件自動化。
 
-## Database
+## 2. Database
 
 原本嘅數據庫係用 MS Access MDB，依家有兩種選擇：
 
 * 照舊用 MS Access MDB
   
-  好處係之前嘅 Visual Basic 寫嘅 program 可以照用，慢慢升級。
+  好處係之前嘅 Visual Basic 寫嘅 program 可以照用，慢慢升級。如果你冇 MS Access，可以試下用呢隻傢伙：[MDB Admin](https://sourceforge.net/projects/mdbadmin/)，Open Source，仲識得 ```Dump a entire MSAccess database into a SQL file. 可選：MSAccess, MSSQL, Oracle, MySQL, PostgreSQL or SQLite```。
 
 * PostgreSQL
   
@@ -50,10 +50,12 @@ A point-of-sale system for optical retail shop.
   * [Bulk insert / copy iEnumerable into table with npgsql - Stack Overflow](https://stackoverflow.com/questions/65687071/bulk-insert-copy-ienumerable-into-table-with-npgsql)
   
   * [PostgreSQLCopyHelper: Simple Wrapper around Npgsql for using PostgreSQL COPY functions.](https://github.com/PostgreSQLCopyHelper/PostgreSQLCopyHelper)
+  
+  Management Console 可以用 [DBeaver](https://dbeaver.io/download/)，免費嘅。另外，[DbGate](https://dbgate.org/) 都唔錯。 
 
 我要一步到位，一開始就用 PostgreSQL。
 
-## Tools/ Packages
+## 3. Tools/ Packages
 
 * [EntityFrameworkCore.Jet](https://github.com/bubibubi/EntityFrameworkCore.Jet)
   用嚟讀 AccDb database (亦可以用 System.Data.OleDb : [Read Microsoft Access Database in C#](https://www.c-sharpcorner.com/article/read-microsoft-access-database-in-C-Sharp/))，不過由於佢官方版本淨係去到 3.1.1，為咗要配合 [Scaffold-DbContext](https://www.entityframeworktutorial.net/efcore/create-model-for-existing-database-in-ef-core.aspx) 所以我要首先 create 隻 project as Core 3.x，run 完 Scaffold-DbContext，gen 哂啲檔案，然後先再將個 project 升級去 Core 6.x，而且改為 [Unofficial EF Core 6 support](https://github.com/bubibubi/EntityFrameworkCore.Jet/issues/111)，有啲忙忙碌碌嘅感覺。
@@ -84,7 +86,9 @@ A point-of-sale system for optical retail shop.
 * [Hangfire](https://www.hangfire.io/)
   Background jobs
 
-## Reporting
+* 
+
+## 4. Reporting
 
 除咗 Invoice 之類（要美觀嘅文件），否則盡可能唔出 PDF 改用 Excel 嚟代替：
 
@@ -102,7 +106,7 @@ A point-of-sale system for optical retail shop.
   
   [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/H4Sc5KQdvbA/0.jpg)](https://www.youtube.com/watch?v=H4Sc5KQdvbA)
 
-## API
+## 5. API
 
 唔會搞全部 tables 嘅 CRUD，主要係提供足夠嘅 API 俾 Web App 或者 Mobile App 用就算達標：
 
@@ -116,7 +120,7 @@ A point-of-sale system for optical retail shop.
 
 差開一筆，Github 有隻搞 WebApi 嘅 code generator：[CodeGenerator3](https://github.com/capesean/codegenerator3)，有文有路，有時間嘅話可以參考一下。
 
-## [Vue-Pure-Admin](https://github.com/xiaoxian521/vue-pure-admin)
+## 6. [Vue-Pure-Admin](https://github.com/xiaoxian521/vue-pure-admin)
 
 ```context
 是一个免费开源的中后台模版。使用了最新的 vue3 vite2 Element-Plus TypeScript 等
@@ -128,3 +132,13 @@ A point-of-sale system for optical retail shop.
 用咗佢嘅 [國際化精簡版](https://github.com/xiaoxian521/pure-admin-thin/tree/i18n)。
 
 簡化版要增加 menu items 可以參考這篇文章：[第八天 把喜歡的vue-pure-admin頁面 加到 pure-admin-thin {{實戰}} - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10296371)。
+
+## 7. Inventory & Sales Forecasting
+
+會試下用 [ML.NET](https://dotnet.microsoft.com/en-us/apps/machinelearning-ai/ml-dotnet) 做 sales forecasting，參考：
+
+* [Time Seires Forecasting in ML.NET](https://www.youtube.com/watch?v=D94VdQluNZQ)
+
+* [ML.NET Samples](https://github.com/dotnet/machinelearning-samples)
+
+應該可以做埋啲常用嘅消耗品嘅庫存 prediction 添。
