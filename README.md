@@ -139,6 +139,14 @@ A point-of-sale system for optical retail shop.
 
 * [Time Seires Forecasting in ML.NET](https://www.youtube.com/watch?v=D94VdQluNZQ)
 
+* [Microsoft ML.NET Tutorial Videos](https://www.youtube.com/watch?v=X0DQjfW09kA&list=PLdo4fOcmZ0oUDTvk5XMNues09FnuB_D0u&t=2s)
+
+* [Machine Learning 101 with ML.NET](https://www.todaysoftmag.com/article/3286/machine-learning-101-with-microsoft-ml-net-part-1-3)
+
 * [ML.NET Samples](https://github.com/dotnet/machinelearning-samples)
 
 應該可以做埋啲常用嘅消耗品嘅庫存 prediction 添。
+
+## 8. Digital Marketing
+
+* Email Marketing 用 [Mailgun](https://www.mailgun.com/pricing/)，佢有提供一個唔錯嘅免費版，library 用呢隻：[FluentEmail](https://github.com/lukencode/FluentEmail)。
