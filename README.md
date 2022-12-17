@@ -10,6 +10,8 @@ A point-of-sale system for optical retail shop.
 
 3. [Tools/ Packages](#3-tools_and_packages)
 
+4. [Reporting](#4-reporting)
+
 ---
 
 ## 1. Intro
