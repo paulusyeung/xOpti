@@ -4,11 +4,11 @@ A point-of-sale system for optical retail shop.
 
 # Table of Contents
 
-1. [Intro](#intro)
+1. [Intro](#1_intro)
 
-2. [Database](#database)
+2. [Database](#2_database)
 
-3. [Tools/ Packages](@tools_packages_)
+3. [Tools/ Packages](3_tools_packages)
 
 ---
 
