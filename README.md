@@ -8,13 +8,17 @@ A point-of-sale system for optical retail shop.
 
 2. [Database](#2-database)
 
-3. [Tools and Packages](#3-tools-and-packages)
+3. [Tools & Packages](#3-tools--packages)
 
 4. [Reporting](#4-reporting)
 
 5. [API](#5-api)
 
 6. [Vue-Pure-Admin](#6-vue-pure-admin)
+
+7. [Inventory & Sales Forecasting](#7-inventory--sales-forecasting)
+
+8. [Digital Marketing](#8-digital-marketing)
 
 ---
 
@@ -71,7 +75,7 @@ A point-of-sale system for optical retail shop.
 
 我要一步到位，一開始就用 PostgreSQL。
 
-## 3. Tools and Packages
+## 3. Tools & Packages
 
 * [EntityFrameworkCore.Jet](https://github.com/bubibubi/EntityFrameworkCore.Jet)
   用嚟讀 AccDb database (亦可以用 System.Data.OleDb : [Read Microsoft Access Database in C#](https://www.c-sharpcorner.com/article/read-microsoft-access-database-in-C-Sharp/))，不過由於佢官方版本淨係去到 3.1.1，為咗要配合 [Scaffold-DbContext](https://www.entityframeworktutorial.net/efcore/create-model-for-existing-database-in-ef-core.aspx) 所以我要首先 create 隻 project as Core 3.x，run 完 Scaffold-DbContext，gen 哂啲檔案，然後先再將個 project 升級去 Core 6.x，而且改為 [Unofficial EF Core 6 support](https://github.com/bubibubi/EntityFrameworkCore.Jet/issues/111)，有啲忙忙碌碌嘅感覺。
