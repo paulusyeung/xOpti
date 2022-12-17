@@ -1,6 +1,6 @@
 # xOpti
 
-A point-of-sale system for optical retail shop.
+A web based point-of-sale application for ```optical retail stores```.
 
 # Table of Contents
 
