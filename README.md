@@ -4,7 +4,7 @@ A point-of-sale system for optical retail shop.
 
 ## 1. Intro
 
-當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App，希望可以用哂 .Net Core ，將來全 Linux 唔使靠 IIS，全免 Windows server licenses。終極目標係用 [Porxmox](https://www.proxmox.com/en/) 搞幾隻 VMs 執行哂所有要用嘅 functions：
+當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App，希望可以用哂 .Net Core ，將來全 Linux 唔使靠 IIS，全免 Windows server licenses。終極目標係用 [Proxmox](https://www.proxmox.com/en/) 搞幾隻 VMs 執行哂所有要用嘅 functions：
 
 ```textile
 +--------+ +--------+ +--------+ +--------+ +--------+
@@ -149,4 +149,5 @@ A point-of-sale system for optical retail shop.
 
 ## 8. Digital Marketing
 
-* Email Marketing 用 [Mailgun](https://www.mailgun.com/pricing/)，佢有提供一個唔錯嘅免費版，library 用呢隻：[FluentEmail](https://github.com/lukencode/FluentEmail)。
+* Marketing Email 用 [Mailgun](https://www.mailgun.com/pricing/)，佢有提供一個唔錯嘅免費版，library 用呢隻：[FluentEmail](https://github.com/lukencode/FluentEmail)。
+* [Transactional Email](https://blog.hubspot.com/customers/difference-between-transactional-and-marketing-email) 都係用 Mailgun 就 OK。
