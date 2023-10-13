@@ -1,5 +1,5 @@
 ---
-title: Intro
+title: 簡介
 icon: user
 order: 1
 ---
