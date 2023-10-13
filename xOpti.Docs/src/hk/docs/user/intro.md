@@ -1,7 +1,7 @@
 ---
 title: Intro
 icon: user
-index: true
+order: 1
 ---
 
 Feature details here.

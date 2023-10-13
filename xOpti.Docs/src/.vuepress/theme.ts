@@ -11,7 +11,6 @@ export default hopeTheme({
   },
 
   iconAssets: "fontawesome",    // "iconfont",
-  iconPrefix: " ",              // 廢料，冇效
 
   logo: "/logo.svg",
 
