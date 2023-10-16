@@ -53,7 +53,6 @@
     <Folder Include="src\hk\" />
     <Folder Include="src\hk\docs\" />
     <Folder Include="src\hk\docs\developer\" />
-    <Folder Include="src\hk\docs\developer\詞彙\" />
     <Folder Include="src\hk\docs\user\" />
     <Folder Include="src\hk\docs\user\glossary\" />
     <Folder Include="src\hk\tutorial\" />
@@ -114,7 +113,6 @@
     <Content Include="src\hk\docs\developer\database.md" />
     <Content Include="src\hk\docs\developer\digital-marketing.md" />
     <Content Include="src\hk\docs\developer\documentation.md" />
-    <Content Include="src\hk\docs\developer\詞彙\sql-server.md" />
     <Content Include="src\hk\docs\developer\intro.md" />
     <Content Include="src\hk\docs\developer\inventory-sales-forecasting.md" />
     <Content Include="src\hk\docs\developer\README.md" />

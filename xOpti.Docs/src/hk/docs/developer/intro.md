@@ -1,5 +1,5 @@
 ---
-title: Intro
+title: 簡介
 icon: user-ninja
 order: 1
 ---
