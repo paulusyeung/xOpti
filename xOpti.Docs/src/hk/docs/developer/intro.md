@@ -5,9 +5,9 @@ order: 1
 ---
 
 
-當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，從此叫 xOpti，用 Visual Studio 2022 C# 重寫為 Web App，希望可以用哂 .Net Core ，將來全 Linux，唔使靠 IIS，全免 Windows server licenses。
+當初係叫 SynergyV，用 Visual Basic 5 寫嘅 Windows App，今次嘅目標係將佢升級為 Web App，從此叫 xOpti，用發 IDE 用 Visual Studio 2022，.NET 7，C#，希望最終全 Linux，唔使靠 IIS，不過目前由於未搵倒合適嘅 Linux Reporting Tools，依然要靠 Windows Server + IIS Web Server，即係要俾 licenses。
 
-終極目標係用 [Proxmox](https://www.proxmox.com/en/) 搞幾隻 VMs 執行哂所有要用嘅 functions：
+Hardware 終極目標係用一部 Mini PC 跑 [Proxmox](https://www.proxmox.com/en/) 然後喺 Proxmox 之上搞幾隻 VMs 執行哂所有要用嘅 functions：
 
 ```text
 +--------+ +--------+ +--------+ +--------+ +--------+
@@ -20,19 +20,19 @@ order: 1
 
 - Proxy Server
   
-  其實係用 [nginx](https://nginx.com/) 搞嘅 Reverse Proxy Server，當使用單一 domain name 嘅時候，可以將唔同嘅 sub-domain 指去唔同嘅 IP。
+  其實係用 [nginx](https://nginx.com/) 搞嘅 Reverse Proxy Server，通常嚟講入屋嘅 internet 淨係得一個 IP，當使用單一 domain name 嘅時候，透過 Reverse Proxy Server 可以將唔同嘅 sub-domain 指去唔同嘅內聯網 IP。
   
 - RDP Server
   
-  我用 [Guacamole](https://guacamole.apache.org/) 直接由外聯網 access 啲內聯網嘅 workstations 或 servers。
+  我用 [Guacamole](https://guacamole.apache.org/) 直接由外聯網 access 啲內聯網嘅 workstations 或 servers，例如利用一隻 VM 安裝一隻 Windows 11 (Ubuntu Desktop 也可)，日後要做 support 嘅時候就可以用 browser 經 Guacamole login 呢隻 Windows 11 做嘢，一切會方便好多。
   
 - Web Server
   
   比較多用途，例如可以 host：xOpti.WebApp、xOpti.Api、xOpti.Restful、xOpti.Graphql、xOpti.Bot、xOpti.Reports、xOpti.Hangfire、xOpti.Migrate 等等 utilities/ applications。
   
-- SQL Server [🔗](glossary/sql-server)
+- SQL Server [🔗](glossary/data-backup)
   
-  我會用 [PostgreSQL](https://www.postgresql.org/) 目前係 v16。
+  我會用 [PostgreSQL](https://www.postgresql.org/) 目前係 v16，用 [DBeaver](https://dbeaver.io/) Com88munity Edition 做日常管理。
   
 - File Server
   

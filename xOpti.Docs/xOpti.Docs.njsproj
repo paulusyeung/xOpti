@@ -120,7 +120,6 @@
     <Content Include="src\hk\docs\developer\tools-packages.md" />
     <Content Include="src\hk\docs\developer\vue-pure-admin.md" />
     <Content Include="src\hk\docs\README.md" />
-    <Content Include="src\hk\docs\user\glossary\sql-server.md" />
     <Content Include="src\hk\docs\user\intro.md" />
     <Content Include="src\hk\docs\user\README.md" />
     <Content Include="src\hk\README.md" />

@@ -11,5 +11,5 @@ We support foo feature, ...
 
 ## Details
 
-- [Intro](intro.md)
+- [SQL Server](sql-server.md)
 - ...
